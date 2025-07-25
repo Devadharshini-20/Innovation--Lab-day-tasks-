@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Function Examples</title>
+</head>
+<body>
+
+  <h2>🔧 JavaScript Function Demo</h2>
+  <button onclick="runExamples()">Run Function Examples (Check Console)</button>
+
+  <script>
+    // 1. Function with fixed parameters
+    function greet(name, age) {
+      console.log(` Hello ${name}, you are ${age} years old.`);
+    }
+
+    // 2. Function using rest parameter (arbitrary number of arguments)
+    function sumAll(...numbers) {
+      let total = 0;
+      for (let num of numbers) {
+        total += num;
+      }
+      console.log(`➕ Sum of [${numbers.join(", ")}] is ${total}`);
+    }
+
+    // 3. Function using arguments object (for older JavaScript)
+    function showArguments() {
+      console.log("Arguments received:", arguments);
+    }
+
+    // 4. Function to test all
+    function runExamples() {
+      console.clear();
+
+      // Fixed parameters
+      greet("Alice", 25);
+      greet("Bob", 30);
+
+      // Rest parameters
+      sumAll(1, 2, 3);
+      sumAll(10, 20, 30, 40, 50);
+
+      // Arguments object
+      showArguments("apple", "banana", 42, true);
+    }
+  </script>
+
+</body>
+</html>
