@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Student Grades Processor</title>
-</head>
-<body>
-  <h2>Open the console (Ctrl+Shift+I) to view outputs</h2>
 
-  <script>
   Math & String Built-in Functions
     console.log("--- Task 1: Math & String Functions ---");
 
