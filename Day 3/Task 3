@@ -1,6 +1,4 @@
-Callback Functions & Scope
 
-// 1. Callback function example
 function doWork(task, callback) {
   console.log("Doing:", task);
   callback(); // runs after task
@@ -11,12 +9,11 @@ function doneMessage() {
 }
 doWork("Coding", doneMessage);
 
-// 2. Another callback with arrow function
+
 doWork("Debugging", () => {
   console.log("All finished!");
 });
 
-// 3. Scope: var, let, const
 function scopeExample() {
   var a = 1;
   let b = 2;
