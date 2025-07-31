@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Conditional & Loop Practice</title>
- <h2> Loop Control Practice</h2>
+
 
   <button onclick="printWhile()">Print 1 to 10 (while loop)</button>
   <button onclick="promptDoWhile()">Enter correct value (do-while)</button>
@@ -99,6 +94,4 @@
       }
       document.getElementById("output2").textContent = table;
     }
-  </script>
-</body>
-</html>
+  
