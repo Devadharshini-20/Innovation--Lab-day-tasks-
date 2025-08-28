@@ -1,0 +1,31 @@
+// Array of objects
+const products = [
+  { id: 101, name: "Laptop", price: 50000 },
+  { id: 102, name: "Phone", price: 20000 }
+];
+
+// Access nested data
+console.log(products[0].name);  // Laptop
+
+// Rest parameters
+function addNumbers(...nums) {
+  return nums.reduce((sum, num) => sum + num, 0);
+}
+console.log(addNumbers(10, 20, 30)); // 60
+
+// Spread operator
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+const merged = [...arr1, ...arr2];
+console.log(merged);  // [1, 2, 3, 4]
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3 };
+const cloned = { ...obj1, ...obj2 };
+console.log(cloned);  // {a:1, b:2, c:3}
+
+// Function with parameter destructuring
+function printProduct({ id, name, price }) {
+  console.log(`ID: ${id}, Name: ${name}, Price: ${price}`);
+}
+printProduct(products[1]); // ID: 102, Name: Phone, Price: 20000
