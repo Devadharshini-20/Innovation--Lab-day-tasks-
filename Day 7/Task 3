@@ -1,0 +1,18 @@
+const person = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+function greet(city, country) {
+  console.log(`Hello, I'm ${this.firstName} ${this.lastName} from ${city}, ${country}`);
+}
+
+// call()
+greet.call(person, "Chennai", "India");
+
+// apply()
+greet.apply(person, ["Mumbai", "India"]);
+
+// bind()
+const boundGreet = greet.bind(person, "Delhi", "India");
+boundGreet();  // permanently bound
